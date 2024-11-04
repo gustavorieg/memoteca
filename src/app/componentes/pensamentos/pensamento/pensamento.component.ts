@@ -21,10 +21,9 @@ export class PensamentoComponent {
   pensamento = input.required<Pensamento>();
 
   larguraPensamento(): string{
-    if(this.pensamento.length >= 256){
+    if(this.pensamento().conteudo.length >= 256){
       return 'pensamento-g';
     }
-    console.log(this.pensamento.conteudo);
     return 'pensamento-p';
   }
 }
