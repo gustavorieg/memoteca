@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { Pensamento } from '../pensamento/pensamento.component';
 
 @Component({
   selector: 'app-criar-pensamento',
@@ -14,8 +15,8 @@ import { RouterLink } from '@angular/router';
 })
 export class CriarPensamentoComponent{
 
-  pensamento = {
-    id: '1',
+  pensamento: Pensamento = {
+    id: 1,
     conteudo: '',
     autoria: '',
     modelo: ''
