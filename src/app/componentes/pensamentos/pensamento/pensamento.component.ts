@@ -3,7 +3,7 @@ import { Component, input, Input, output, Output } from '@angular/core';
 import { EventEmitter } from 'stream';
 
 export interface Pensamento {
-  id: number;
+  id?: number;
   conteudo: string;
   autoria: string;
   modelo: string;
