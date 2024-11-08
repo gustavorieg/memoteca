@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, input, Input, output, Output } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { Router } from 'express';
 import { EventEmitter } from 'stream';
 
 export interface Pensamento {
@@ -13,7 +15,9 @@ export interface Pensamento {
   selector: 'app-pensamento',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    RouterLink,
+    RouterOutlet
   ],
   templateUrl: './pensamento.component.html',
   styleUrl: './pensamento.component.css'

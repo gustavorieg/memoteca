@@ -5,6 +5,7 @@ import { Pensamento } from '../pensamento/pensamento.component';
 import { PensamentoService } from '../pensamento.service';
 import { HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { randomFillSync, randomInt } from 'crypto';
 
 @Component({
   selector: 'app-criar-pensamento',
